@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三味书屋</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Flat-UI-master/dist/css/flat-ui.min.css">
+    <script src="../bootstrap-3.3.4/dist/js/jquery-1.11.3.min.js"></script>
+    <style>
+        .row {
+            margin-top: 20px;;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 10px;
+        }
+
+        #dropdown-menu li {
+            padding-bottom: 10px;
+            line-height: 30px;
+        }
+        .pagination{
+            background: #cccccc;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#myTabs li').click(function (e) {
+                $(this).tab('show')
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../index.html"><img src="../images/index/logo.png" alt="" style="height: 50px;width: auto;"></a>
+                <a href="../index.html"><img src="../images/index/三味书屋.png" alt="" style="height: 50px;width: auto;"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="sort.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全部分类</a></li>
+                    <li><a href="order.html">&nbsp;&nbsp;&nbsp;&nbsp;我的订单</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li>
+                        <form class="navbar-form navbar-left" action="search.html">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="输入关键字查询">
+                            </div>
+                            <button type="submit" class="btn btn-primary">搜索</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </form>
+                    </li>
+                    <li><a href="login.html">登录&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="register.html">注册&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li>
+                        <a href="cart.html"><span class="glyphicon glyphicon-shopping-cart">购物车</span></a>
+                    </li>
+                    <li>
+                        <a href="center.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="../sort/sort_童书.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;童书&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_教育.html">教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_文艺.html">文艺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_人文.html">人文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/srot_励志.html">励志&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_生活.html">生活&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_经管.html">经管&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="../sort/sort_科技.html">科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../images/sort/三味书屋轮播图1.jpg" alt="" style="height: 550px;width: 100%;">
+            </div>
+            <div class="item">
+                <img src="../images/sort/轮播图2.jpg" alt="" style="height: 550px;width: 100%;">
+            </div>
+            <div class="item">
+                <img src="../images/sort/轮播图3.jpg" alt="" style="height: 550px;width: 100%;">
+            </div>
+            <div class="item">
+                <img src="../images/sort/轮播图4.jpg" alt="" style="height: 550px;width: 100%;">
+            </div>
+        </div>
+
+        <!-- Controls轮播图左右开关 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <div class="card">
+        <div class="panel panel-info">
+            <div class="panel-heading">猜你喜欢</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/天官赐福.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">天官赐福</div>
+                                <div>
+                                    <span class="text-left text-danger">￥199</span>
+                                </div>
+                                <div class="small">
+                                    全球畅销书作者墨香铜臭超人气口碑力作
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/两种孤独.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">两种孤独</div>
+                                <div>
+                                    <span class="text-left text-danger">￥48.5</span>
+                                </div>
+                                <div class="small">
+                                    多年以后被寻回的珍贵文字！理性与幽默、小说与人生的震撼碰撞
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/原来你怪可爱的.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">原来你怪可爱的</div>
+                                <div>
+                                    <span class="text-left text-danger">￥54.5</span>
+                                </div>
+                                <div class="small">
+                                    献给希望能够驱散心中迷雾和已经明白困惑会永远存在的人
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div><div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/人性的底层逻辑.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">人性的底层逻辑</div>
+                                <div>
+                                    <span class="text-left text-danger">￥39.2</span>
+                                </div>
+                                <div class="small">
+                                    用心理学揭秘人与人之间交往的底层逻辑，让你瞬间看懂人心！
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div><div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/每个人都了不起.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">每个人都了不起</div>
+                                <div>
+                                    <span class="text-left text-danger">￥57.4</span>
+                                </div>
+                                <div class="small">
+                                    摆脱无意义，实现自我价值，每个年轻人都值得一读的人生之书！
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div><div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/汤姆·索亚历险记.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">汤姆·索亚历险记</div>
+                                <div>
+                                    <span class="text-left text-danger">￥10.42</span>
+                                </div>
+                                <div class="small">
+                                    以欢快的笔调，描写少年儿童自由活泼的心灵
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/换届.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">换届</div>
+                                <div>
+                                    <span class="text-left text-danger">￥69</span>
+                                </div>
+                                <div class="small">
+                                    换届之年 悬念迭起 直面现实 气贯长虹
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/生死疲劳.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">生死疲劳</div>
+                                <div>
+                                    <span class="text-left text-danger">￥69.9</span>
+                                </div>
+                                <div class="small">
+                                    在极度痛苦时笑出声来，获得内心深处的解脱。
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">主编推荐</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/一读就通的中国历史.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">一读就通的中国历史</div>
+                                <div>
+                                    <span class="text-left text-danger">￥499.8</span>
+                                </div>
+                                <div class="small">
+                                    一书读通五千年完整中国史，像连续剧一样
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/艺术与文明.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">艺术与文明</div>
+                                <div>
+                                    <span class="text-left text-danger">￥166.3</span>
+                                </div>
+                                <div class="small">
+                                    美术史家范景中五十年心力之作，献给所有热爱艺术、热爱美的你
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/熊猫花花.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">熊猫花花</div>
+                                <div>
+                                    <span class="text-left text-danger">￥47.6</span>
+                                </div>
+                                <div class="small">
+                                    熊猫界顶流，近60幅萌照讲述花花等比例长大历程
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/双食记.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">双食记</div>
+                                <div>
+                                    <span class="text-left text-danger">￥59</span>
+                                </div>
+                                <div class="small">
+                                    佟丽娅白客主演同名网剧，殳俏悬疑力作
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/贸易打造的世界.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">贸易打造的世界</div>
+                                <div>
+                                    <span class="text-left text-danger">￥108</span>
+                                </div>
+                                <div class="small">
+                                    不平等、罪恶税、谷物全球化、能源转型、生态破坏
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/史记.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">史记</div>
+                                <div>
+                                    <span class="text-left text-danger">￥295</span>
+                                </div>
+                                <div class="small">
+                                    是一部人人都能读懂、人人都会爱读的文白对照本《史记》
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/学习高手.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">学习高手</div>
+                                <div>
+                                    <span class="text-left text-danger">￥37.9</span>
+                                </div>
+                                <div class="small">
+                                    独家分享让“学渣”逆袭成“学霸”的提分宝典
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img style="width: 100%; height: 100%; " alt="" src="../images/sort/你也可以活成想要的.jpg">
+                            </a>
+                            <div class="caption">
+                                <div class="text-left">你也可以活成想要的</div>
+                                <div>
+                                    <span class="text-left text-danger">￥46.4</span>
+                                </div>
+                                <div class="small">
+                                    实战派女性成长导师UP子木力作，给普通人的幸福践行法
+                                </div>
+                                <p><a class="btn btn-primary btn-block" role="button" href="bookDetail.html">查看详情</a>
+                                </p>
+                                <p><a href="cart.html" class="btn btn-danger btn-block" role="button">加入购物车</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="container">
+    <nav class="center">
+        <ul class="pagination  pagination-lg">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">首页</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">末页</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script src="../bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+<script src="../Flat-UI-master/dist/js/flat-ui.min.js"></script>
+<script src="../bootstrap-3.3.4/js/carousel.js"></script>
+</body>
+</html>
